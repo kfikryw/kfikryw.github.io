@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap');
+
+body {
+    font-family: 'Proxima Nova', sans-serif;    
+    font-size: larger;                                  
+    background-color: #e7e9ee;
+    color: #0a211f;
+}
+body::-webkit-scrollbar{
+    width: 2px;
+}
+.selection-menu-container {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.hobbies-section{
+    border-top: #1f2833 1px solid;
+    padding: 15px;
+}
+
+.list-menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+.list-menu:hover {
+    background-color: #becada;
+    border-radius: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.biodata-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.welcome-wrd {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size:medium;
+    color: #0a211f;
+    font-weight: bold;
+margin-left: 30px;
+    
+}
+.menu-selection-container{
+  display: flex; 
+  height: 60px;
+  flex-direction: row;
+  justify-content: space-between; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me {
+    cursor: pointer;
+    display: flex;
+    position: relative;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 15px 30px;
+    background-color: #45a29e;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-me:hover {
+    background-color: #3e8c7c;
+    transform: scale(1.05);
+}
+
+.contact-button {
+    font-size: 18px;
+    color: #c5c6c7;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #35424a;
+}
+
+.background-wrd {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    font-size: 60px;
+    color: #0a211f;
+    font-weight: 100;
+    
+    margin-right: 25px;
+    border-bottom: #0a211f solid;
+    margin-bottom: 25px;
+}
+
+.selection-menu-container {
+    padding: 20px;
+    
+    
+}
+
+
+.nav {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    background-color: #45a29e;
+    border-radius: 5px;
+}
+
+.my-pic {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+    left:25%;
+    align-items: center;
+    
+    width: 350px; /* Adjust size as needed */
+    height: 350px; /* Adjust size as needed */
+    border-radius: 20%; /* Make it circular */
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Adjust the float distance */
+    }
+}
+.row-edu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.my-cat{
+    position: relative;
+    top: 2px;
+    left:2%;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    border-radius: 20px; /* Make it circular */
+     /* Floating animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+
+}
+.iium-img{
+    display: flex;
+    width: 20%;
+    height: 200px;
+    border-radius: 20%;
+    justify-content: left;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.bio-wrd {
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    font-size: 60px;
+    color: #0a211f;
+    font-weight: 100;
+    
+    margin-left: 25px;
+    border-bottom: #0a211f solid;
+}
+
+.name-age {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
+    color: #1f2833;
+    width: 60%;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative; /* Needed for the animation */
+    padding: 10px; /* Add some padding if necessary */
+   
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding: 15px;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 25%;
+    gap: 10px;
+}
+
+.sk-img {
+    margin-right: 40px;
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    border-radius: 20%; /* Make it circular */
+    animation: float 4s ease-in-out infinite; /* Different floating animation duration */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.essay-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.smk-img {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 450px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    border-radius: 20%; /* Make it circular */
+    animation: float 5s ease-in-out infinite; /* Different floating animation duration */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.uia-img {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 450px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    border-radius: 20%; /* Make it circular */
+    animation: float 6s ease-in-out infinite; /* Different floating animation duration */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-row {
+    display: flex;
+    flex-direction: row;
+}
+.background-essay{
+    display: flex;
+    height: 180px;
+    width: 95%;
+    margin-left: 35px;
+    justify-content: center;
+    text-align: center;
+    background-color: #1f2833;
+    border-radius: 10px;
+    align-items: center;
+}
+
+@keyframes float1 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Different float distance */
+    }
+}
+.img-caption{
+    text-align: center;
+    justify-content: center;
+}
+.bio-img{
+    height: 40px;
+    width: 40px;
+}
+.menu-wrd{
+    color: #45a29e;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+}
+.academic-wrd{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #0a211f;
+    font-weight: 100;
+    
+    margin-right: 25px;
+    border-bottom: #0a211f solid;
+    margin-bottom: 25px;
+}
+.academic-caption{
+    display: flex;
+    justify-content: right;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    animation: float2 5s ease-in-out infinite; /* Different floating animation duration */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@keyframes float2 {
+    0%, 100% {
+        transform: translateY(1);
+    }
+    30% {
+        transform: translateY(-12px); /* Different float distance */
+        transform: translateY(10%);
+    }
+}
+.academic-inside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.academic-essay-container{
+    background-color: #1f2833;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    border-radius: 10px;
+    width:70%;
+}
+
+.essay-container ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.essay-container li {
+    margin-bottom: 10px;
+}
+.inner-about-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.col-about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:2px
+}
+.education-section{
+    margin-top: 0px;
+    padding: 15px;
+}
+.left{
+    text-align: left;
+    justify-content: left;
+}
+.about-description{
+    margin-top: 50px;
+    text-align: left;
+    justify-content: center;
+    border-bottom: #1f2833 1px solid;
+}
+.about-title{
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+}
+.education-title{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    gap: 40px;
+}
+ .iium-img {
+    opacity: 0;
+    animation: fadeIn 1s forwards, float 3s ease-in-out infinite;
+}
+.my-cat{
+    animation: fadeIn 1s forwards
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px); /* Adjust the float distance */
+    }
+}
+.github{
+    width: 40px;
+    height: 40px;
+}
+.hobbies-title{
+    display: flex;
+    justify-content: left;
+}
+
+.contact-container {
+    
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0a211f;
+}
+
+.contact-form-container {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #45a29e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #3e8c7c;
+}
+
+.social-media-container {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0a211f;
+}
