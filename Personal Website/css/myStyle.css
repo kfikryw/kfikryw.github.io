@@ -77,6 +77,9 @@ margin-left: 30px;
     align-items: center;
 }
 .contact-me {
+    position: relative;
+    transform: rotate(-10deg);
+    left: 10%;
     cursor: pointer;
     display: flex;
     position: relative;    
@@ -427,6 +430,19 @@ margin-left: 30px;
 .github{
     width: 40px;
     height: 40px;
+    cursor: pointer;
+}
+.github-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .hobbies-title{
     display: flex;
@@ -454,12 +470,120 @@ margin-left: 30px;
     text-align: left;
 }
 
-.form-input {
+.form-input-name, .form-input-email,.form-input-message {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.greet{
+    position: relative;
+    top: 40px;
+    right: 69%;
+    background-color: #409e3e67;
+    color: #181e2af5;
+    border-radius: 5px;
+    height: 600px;
+    width: 350px;
+    animation: fadeIn1 1s forwards, float-greet 3s ease-in-out infinite;
+}
+@keyframes float-greet {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px); /* Adjust the float distance */
+    }
+}
+
+/* CSS for floating text */
+
+.balls-container {
+    display: flex;
+    position: relative;
+    top: 90px;
+    right: 29%;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+   
+}
+.cont{
+    position: relative;
+    top: 50px;
+    right: 60px;
+    background-color: #74979479;
+    border-radius: 15px;
+    font-weight: bolder;
+    animation: fadeIn1 1s forwards, float-greet 6s ease-in-out infinite;
+}
+
+.ball {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #8d8f09ae;
+    border-radius: 50%;
+    animation: float5 2s ease-in-out infinite;
+}
+/* Floating animation */
+@keyframes float5 {
+    0%, 100% {
+        transform: translateY(0) rotate(-15deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(-15deg);
+    }
+}
+
+/* Slightly different animations for each ball to create a staggered effect */
+.balls-container .ball:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.balls-container .ball:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.balls-container .ball:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.box-1{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    top: 120px;
+    left: 25%;
+    transform: rotate(125deg);
+    background-color: #931c1ca5; 
+    border-radius: 10px;
+}
+.ball-1{
+    position: relative;
+    height: 60px;
+    width: 120px;
+    border-radius: 100px;
+    background-color: #38625f;
+    left: 12%;
+    top: -60px;
+    animation: fadeIn1 1s forwards, float-ball 3s ease-in-out infinite;
+
+}
+@keyframes fadeIn1 {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float-ball {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the float distance */
+    }
 }
 
 .contact-button {
@@ -484,4 +608,15 @@ margin-left: 30px;
     margin: 0 10px;
     text-decoration: none;
     color: #0a211f;
+}
+.linkedin{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.linkedin-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
